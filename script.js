@@ -35,13 +35,12 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  if (!clickedYes) {
-    image.src = "images/stage9.png"; // 成功情勒後才顯示的開心圖
-    noBtn.style.display = "none";
-    yesBtn.style.transform = "scale(1.5)";
-    yesBtn.textContent = "耶～謝謝你！";
-    clickedYes = true;
-  } else {
+  image.src = "images/stage9.png"; // 成功情勒後的開心圖
+  noBtn.style.display = "none";
+  yesBtn.style.transform = "scale(1.5)";
+  yesBtn.textContent = "耶～謝謝你！";
+
+  setTimeout(() => {
     window.open("https://www.youtube.com/@Noon_0606", "_blank");
-  }
+  }, 1500); // 1.5秒後自動跳轉
 });
