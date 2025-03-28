@@ -1,4 +1,11 @@
 // script.js
+
+// ✅ 預載所有圖片
+for (let i = 0; i <= 9; i++) {
+  const img = new Image();
+  img.src = `images/stage${i}.png`;
+}
+
 let stage = 0;
 const maxStage = 8;
 
