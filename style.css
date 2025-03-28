@@ -31,7 +31,7 @@ body {
   align-items: center;
   gap: 40px;
   flex-wrap: nowrap;
-  min-height: 150px; /* 預留足夠空間讓按鈕放大時不重疊 */
+  padding: 40px 0;
 }
 
 button {
@@ -52,7 +52,7 @@ button {
   background-color: #ff69b4; /* 粉紅色 */
   color: white;
   transform: scale(1);
-  z-index: 1; /* 確保在上層 */
+  z-index: 1;
 }
 
 #no-btn {
