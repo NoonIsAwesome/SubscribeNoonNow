@@ -19,13 +19,15 @@ const yesBtn = document.getElementById("yes-btn");
 const noBtn = document.getElementById("no-btn");
 const image = document.getElementById("main-image");
 
+let clickedYes = false;
+
 noBtn.addEventListener("click", () => {
   if (stage < maxStage) {
     stage++;
     image.src = `images/stage${stage}.png`;
     noBtn.textContent = rejectTexts[stage];
 
-    const yesScale = 1 + stage * 0.4;
+    const yesScale = 1 + stage * 0.2;
     const noScale = Math.max(1 - stage * 0.05, 0.5);
     yesBtn.style.transform = `scale(${yesScale})`;
     noBtn.style.transform = `scale(${noScale})`;
@@ -33,8 +35,13 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  image.src = "images/stage9.png"; // 成功情勒後才顯示的開心圖
-  noBtn.style.display = "none";
-  yesBtn.style.transform = "scale(1.5)";
-  yesBtn.textContent = "耶～謝謝你！";
+  if (!clickedYes) {
+    image.src = "images/stage9.png"; // 成功情勒後才顯示的開心圖
+    noBtn.style.display = "none";
+    yesBtn.style.transform = "scale(1.5)";
+    yesBtn.textContent = "耶～謝謝你！";
+    clickedYes = true;
+  } else {
+    window.open("https://www.youtube.com/@Noon_0606", "_blank");
+  }
 });
