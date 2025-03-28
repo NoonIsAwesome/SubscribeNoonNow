@@ -1,13 +1,13 @@
 // script.js
 
 // ✅ 預載所有圖片
-for (let i = 0; i <= 5; i++) {
+for (let i = 0; i <= 9; i++) {
   const img = new Image();
   img.src = `images/stage${i}.png`;
 }
 
 let stage = 0;
-const maxStage = 4;
+const maxStage = 8;
 
 const rejectTexts = [
   "不要",
@@ -42,7 +42,7 @@ noBtn.addEventListener("click", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  image.src = "images/stage5.png"; // 成功情勒後的開心圖
+  image.src = "images/stage9.png"; // 成功情勒後的開心圖
   noBtn.style.display = "none";
   yesBtn.style.transform = "scale(1.5)";
   yesBtn.textContent = "耶～謝謝你！";
