@@ -25,12 +25,15 @@ body {
 
 .buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 button {
   font-size: 1.2rem;
   padding: 10px 20px;
-  margin: 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -46,4 +49,5 @@ button {
 #no-btn {
   background-color: #add8e6; /* 淺藍色 */
   color: #333;
+  transform: scale(1);
 }
