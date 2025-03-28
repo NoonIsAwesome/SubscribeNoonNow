@@ -1,0 +1,49 @@
+/* style.css */
+body {
+  background-color: #fff7f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#main-image {
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+#subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yes-btn {
+  background-color: #ff69b4; /* 粉紅色 */
+  color: white;
+  transform: scale(1);
+}
+
+#no-btn {
+  background-color: #add8e6; /* 淺藍色 */
+  color: #333;
+}
