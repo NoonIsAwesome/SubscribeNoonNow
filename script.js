@@ -41,6 +41,6 @@ yesBtn.addEventListener("click", () => {
   yesBtn.textContent = "耶～謝謝你！";
 
   setTimeout(() => {
-    window.open("https://www.youtube.com/@Noon_0606", "_blank");
+    window.open("https://www.youtube.com/@Noon_0606?sub_confirmation=1", "_blank");
   }, 1500); // 1.5秒後自動跳轉
 });
