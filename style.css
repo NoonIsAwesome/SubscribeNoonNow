@@ -26,18 +26,22 @@ body {
 .buttons {
   margin-top: 30px;
   display: flex;
+  flex-wrap: wrap;          /* 允許按鈕換行 */
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;                /* 按鈕之間距離 */
+  padding: 40px 0;          /* 增加上下空間，避免圖片或文字被擠壓 */
 }
 
 button {
   font-size: 1.2rem;
   padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 100px;
+  min-height: 48px;
+  word-break: keep-all;
 }
 
 #yes-btn {
