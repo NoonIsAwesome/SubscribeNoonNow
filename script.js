@@ -1,6 +1,6 @@
 // script.js
 let stage = 0;
-const maxStage = 8; // 改為最多只到 stage8.png，stage9 專供「可以」使用
+const maxStage = 8;
 
 const rejectTexts = [
   "不要",
