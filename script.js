@@ -1,6 +1,6 @@
 // script.js
 let stage = 0;
-const maxStage = 9;
+const maxStage = 8; // 改為最多只到 stage8.png，stage9 專供「可以」使用
 
 const rejectTexts = [
   "不要",
@@ -24,13 +24,16 @@ noBtn.addEventListener("click", () => {
     stage++;
     image.src = `images/stage${stage}.png`;
     noBtn.textContent = rejectTexts[stage];
-    const scale = 1 + stage * 0.1;
-    yesBtn.style.transform = `scale(${scale})`;
+
+    const yesScale = 1 + stage * 0.4;
+    const noScale = Math.max(1 - stage * 0.05, 0.5);
+    yesBtn.style.transform = `scale(${yesScale})`;
+    noBtn.style.transform = `scale(${noScale})`;
   }
 });
 
 yesBtn.addEventListener("click", () => {
-  image.src = "images/stage9.png";
+  image.src = "images/stage9.png"; // 成功情勒後才顯示的開心圖
   noBtn.style.display = "none";
   yesBtn.style.transform = "scale(1.5)";
   yesBtn.textContent = "耶～謝謝你！";
