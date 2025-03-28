@@ -27,7 +27,7 @@ noBtn.addEventListener("click", () => {
     image.src = `images/stage${stage}.png`;
     noBtn.textContent = rejectTexts[stage];
 
-    const yesScale = 1 + stage * 0.2;
+    const yesScale = 1 + stage * 0.4;
     const noScale = Math.max(1 - stage * 0.05, 0.5);
     yesBtn.style.transform = `scale(${yesScale})`;
     noBtn.style.transform = `scale(${noScale})`;
