@@ -24,6 +24,7 @@
 
     .ball{
       position:relative; width:100%; height:100%; border-radius:50%; overflow:hidden; cursor:pointer;
+      background-color:#0b0f1a; /* 深藍黑 */
       background:
         radial-gradient(120% 120% at 30% 22%, rgba(255,255,255,.45), rgba(180,220,255,.12) 36%, rgba(0,0,0,.48) 100%),
         radial-gradient(60% 60% at 70% 72%, rgba(199,146,234,.32), rgba(199,146,234,.08) 62%, rgba(0,0,0,.58) 100%);
@@ -37,6 +38,7 @@
 
     /* 疊加玻璃層 */
     .glass-overlay{
+      radial-gradient(160% 120% at 28% 18%, rgba(255,255,255,.85), rgba(255,255,255,.25) 24%, rgba(255,255,255,0) 46%);
       position:absolute; inset:0; border-radius:50%; pointer-events:none;
       background:
         radial-gradient(200% 120% at 30% 20%, rgba(255,255,255,.35), rgba(255,255,255,0) 60%),
